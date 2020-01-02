@@ -3,11 +3,17 @@ from flask import Flask
 app = Flask(__name__);
 
 @app.route('/')
-def hello_world():
+def dada():
     return "Hello World";
+
 
 if __name__ == '__main__':
    app.run();
 
-while True:
-    print("Hello");
+#app.debug = True
+#app.run()
+#app.run(debug = True)
+
+#@app.route('/hello/<name>')
+#def hello_name(name):
+#  return 'Hello %s!' % name
